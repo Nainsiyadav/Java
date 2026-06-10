@@ -4,6 +4,9 @@ This repository contains Java programs that I have practiced while learning Java
 
 ## Topics Covered
 - Variables and Data Types
+- Type conversion
+- Type casting
+- Type of operator
 - Input and Output
 - Conditional Statements
   - if
@@ -15,6 +18,7 @@ This repository contains Java programs that I have practiced while learning Java
   - do-while loop
 - Methods
 - Arrays
+- Varargs(...)
 - Strings
 
 ## Programs Included
