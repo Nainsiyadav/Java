@@ -1,13 +1,15 @@
  --------------COMMENTS--------------
 1. Single-line comment:
-- Use : //
+- Use this: //
 -example : 
 // this is single line comment 
 
 2. Multi-line comment:
--Use : /* */
+-Use this : /* */
 -Example  : 
 /* this 
-is multi-line
-comment */
+is multi-
+line
+comment */ 
+
 
