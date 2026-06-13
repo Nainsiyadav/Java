@@ -3,7 +3,10 @@
 This repository contains Java programs that I have practiced while learning Java fundamentals.
 
 ## Topics Covered
-- Variables and Data Types
+- Boiler-plate
+- Comments
+- Variables
+- Data Types
 - Type conversion
 - Type casting
 - Type of operator
