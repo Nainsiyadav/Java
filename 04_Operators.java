@@ -29,6 +29,7 @@ public class operators {
         System.out.println(--a);  // pre decrement
     }
 
+<<<<<<< HEAD
 
     // 2. Relational operators(==,!=,<,>,>=,<=)
     public static void main(String[] args){
@@ -50,3 +51,5 @@ public class operators {
         System.out.println(a||b);
         System.out.println(!b);
     }
+=======
+>>>>>>> e824ac6c50e227a3c395410d903a68350e0924c4
