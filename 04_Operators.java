@@ -18,11 +18,13 @@ public class operators {
 
 
     // Unary operator
+
     // Rules for Increment and Decrement :
     //  1. can not applied to constant 
     // 2. Nesting of both operators is not allowed(Example - int a=7;int b=++(++a) // compile time error) 
     // 3. they are not operated over final variables(Example - final int a=10;int b=++a  // compile time error)  
     // 4. Increment and Decrement Operators  can not be appied to Booleans(Example - boolean a=false;a++;  // compile time error).
+
     public static void main(String[] args) {
         int a = 7;
         // Increment ------->
@@ -35,7 +37,12 @@ public class operators {
     }
 
 
-        // 2. Relational operators(==,!=,<,>,>=,<=)
+
+
+
+
+    // 2. Relational operators(==,!=,<,>,>=,<=)
+
     public static void main(String[] args){
         int a = 88;
         int b = 55;
@@ -51,6 +58,7 @@ public class operators {
     public static void main(String[] args){
         int a = 4;
         int b = 7;
+
         System.out.println(a>b  && b<a);
         System.out.println(a<b||b>a);
         System.out.println(a!=b);
@@ -67,4 +75,10 @@ public class operators {
     System.out.println(b *= 2); // b = b*2
     
    }
+
+
+        System.out.println(a&&b);
+        System.out.println(a||b);
+        System.out.println(!b);
+    }
 
