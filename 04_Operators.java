@@ -109,7 +109,7 @@ its Truth Table :
 
  
 
-//public static void main(String[] args){
+public static void main(String[] args){
     System.out.println(6|8);
 }
 
@@ -125,3 +125,21 @@ If the bits are opposite, the solution has a 1 in that
 public static void main(String[] args){
     System.out.println(6^8);
 }
+
+/*3. Bitwise shift(>>,<<,>>>) --> 
+shifts each digit in a number's binary representation left(<<) or right(>>) 
+by as many spaces as specified by the second operand. */
+
+// 1. left shift : 2<<1
+public static void main(String[] args){
+    System.out.println(2<<1);
+}
+
+// 2<<1 => 0010<<1 =>0100 =>4(in decimal).
+
+// 2. Right shift(8>>2)
+public static void main(String[] args){
+    System.out.println(8>>2);
+}
+
+// 8>>2 =>10002 =>0010 =>2(in decimal).
