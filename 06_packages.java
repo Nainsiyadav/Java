@@ -27,4 +27,9 @@ public class packages {
         System.out.println("Random Number: " + Math.random());
 
     }
+<<<<<<< HEAD:packages.java
 }
+=======
+    
+}
+>>>>>>> 54608da58b4f87860b2601ae6e67884a6bc0a910:06_packages.java
