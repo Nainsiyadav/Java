@@ -33,7 +33,7 @@ public class conditionalStatement {
         the if condition yields true, it execute the statement inside 
         that if block and still check further condition. If none of
         conditions evaluates to be true the program executes the statement
-        of the final else block.
+        of the final else block.*/
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.print("please enter the number : ");
@@ -45,7 +45,7 @@ public class conditionalStatement {
             }if(n%2==0){
                 System.out.println("number is even ");
             }
-        }*/
+        }
 
 
 
@@ -53,12 +53,12 @@ public class conditionalStatement {
 
     The ternary operator, also known as the conditional operator,
     is a shorthand way of writing an if-else statement with a single
-    expression.
+    expression.*/
     public static void main(String[] args) {
         int num =65 ;
         String result = (num %2==0) ? "Even" : "Odd";
         System.out.print("the number is "+result);
-    }*/
+    }
 
     /* Type conversion ---
     Type casting in java is the process of converting one data type to another .
