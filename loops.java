@@ -100,4 +100,6 @@ public class loops {
         System.out.println(fact);
 
     }
+    
 }
+
