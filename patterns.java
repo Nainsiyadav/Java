@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class patterns {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         public static void main(String a[]){
 
         for (int i = 1; i <= 9; i++) {
@@ -125,7 +125,44 @@ public class patterns {
           System.out.println();
         }
 
-    }
+    }*/
 
-  
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("please enter your number : ");
+        int n = sc.nextInt();
+        //first - half
+        for (int i = 1; i <=n; i++) {
+            //star
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            //speace
+            for (int j = 1; j <= 2*(n-i); j++) {
+                System.out.print(" ");
+            }
+            //star
+            for (int j = 1; j <=i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // Second - half
+        for (int i = n; i >= 1; i--) {
+            //star
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            //speace
+            for (int j = 1; j <= 2*(n-i); j++) {
+               System.out.print(" "); 
+            }
+            //star
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
