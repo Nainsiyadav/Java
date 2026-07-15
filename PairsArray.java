@@ -40,10 +40,10 @@ public class PairsArray {
     public static void main(String[] args) {
       int n[] = {2,4,6,8,10};
       findSubArray(n);  
-    }*/
+    }
 
 
-// brute Force
+// brute Force Method
    public static void FindMaxSubArray(int n[]){
     int currSum = 0;
     int maxSum = Integer.MIN_VALUE;
@@ -66,5 +66,48 @@ public class PairsArray {
     public static void main(String[] args) {
         int n[] = {2,4,6,8,10};
      FindMaxSubArray(n);   
+    }*/
+
+   // Prefix Array Method
+   public static void FindMax(int n[]){
+    int currSum = 0;
+    int MaxSum = Integer.MIN_VALUE;
+    int prefix[] = new int[n.length];
+    // Calculate Prefix array
+    prefix[0] = n[0];
+    for (int i = 1; i < prefix.length; i++) {
+        prefix[i] = prefix[i-1] + n[i];
     }
+    //Finding start and end
+    for (int i = 0; i < n.length; i++) {
+        
+        for (int j = i; j < n.length; j++) {
+            currSum = i==0 ? prefix[j] : prefix[j] - prefix[i-1];
+
+            if(MaxSum < currSum){
+              MaxSum = currSum;
+            }
+        }
+    }
+    System.out.println("Max Sum  = "+MaxSum);
+   }
+
+   public static void kadans(int n[]){
+    int cs = 0;
+    int ms = 0;
+    for (int i = 0; i < n.length; i++) {
+        cs += n[i];
+
+        if(cs < 0){
+            cs = 0;
+        }
+        ms = Math.max(ms, cs);
+    }
+    System.out.println("Max sum of subarray is : "+ms);
+   }
+   public static void main(String[] args) {
+    int n[] = {-2,-3,4,-1,-2,1,5,-3};
+    //FindMax(n);
+    kadans(n);
+   }
 }
