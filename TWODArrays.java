@@ -38,7 +38,7 @@ public class TWODArrays {
      System.out.print("Eter your key :");
      int key = sc.nextInt();
     Search(Mat ,key);
-  }*/
+  }
 
     // ----------FIND MAX AND MIN VALUE OF MATRIX ---------
  public static void Max(int mat[][]){
@@ -77,5 +77,56 @@ public class TWODArrays {
     }
     Max(mat);
     //Print(mat);
- }
+ }*/
+
+//================= QUESTIONS ==============
+/*Question 1 : Print the number of 7’s that are in the 2d array.
+Example :
+Input - int[][] array = { {4,7,8},{8,8,7} };
+Output - 2
+public static void FindNumber(int mat[][],int key){
+    int index = 0;
+    int count = 0;
+    for (int i = 0; i < mat.length; i++) {
+      for (int j = 0; j < mat[0].length; j++) {
+        if(mat[i][j] == key){
+            index = mat[i][j];
+            count++;
+        }
+      }  
+    }
+    System.out.println("found key "+count+" times ");
+}*/
+public static void main(String[] args) {
+    //int[][] mat = {{4,7,8},{8,8,7}};
+    //FindNumber(mat,7);
+    int mat[][] = {{1,4,9},{11,4,3},{2,2,3}};
+   // printSum(mat);
+   Printsum(mat);
+}
+
+public static void printSum(int mat[][]){
+    int sum = 0;
+    int startrow = 1;
+    int endrow = mat.length;
+    int startcol = 0;
+    int endcol = mat[0].length;
+    for (int i = startrow; i < endrow; i++) {
+        for (int j = startcol; j < endcol; j++) {
+            if(i==1)
+              sum+= mat[i][j];
+        }
+    }
+    System.out.println("sum is :"+sum);
+}
+
+//================== optamise way ==============
+public static void Printsum(int mat[][]){
+    int sum = 0;
+    for (int i = 0; i < mat[1].length; i++) {
+        sum+= mat[1][i]; 
+    }
+    System.out.println("sum is :"+sum);
+
+}
 }
