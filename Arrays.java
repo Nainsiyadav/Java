@@ -16,7 +16,7 @@ public class Arrays {
             System.out.println(arr[i]);
         }
 
-    }*/
+    }
 
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -31,5 +31,23 @@ public class Arrays {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]+" ");
         }
+    }*/
+
+    //============================== Question ====================
+    //Question 1: Given an integer array nums, return true if any value appears at least twice in the
+    //array, and return false if every element is distinct.
+
+    public static boolean isDistinct(int arr[]){
+        for (int i = 0; i < arr.length; i++) {
+            for (int k = i+1; k < arr.length; k++) {
+               if(arr[i] == arr[k])
+                 return true;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4};
+        System.out.println(isDistinct(arr));
     }
 }
