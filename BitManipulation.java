@@ -68,12 +68,12 @@ public class BitManipulation {
     //getEven(4);
     //System.out.println(getBit(10, 3));
     //System.out.println(setithBit(10, 3));
-    //System.out.println(clearIthBit(10, 3));
+    System.out.println(clearIthBit(10, 3));
     //System.out.println(updateIthit(10, 2, 1));
     //System.out.println(updateIthit(10, 2, 0));
     //System.out.println(clearLastbit(15,2));
     // System.out.println(clearBitinRange(10,2,4));
     // System.out.println(ispower(15));
-    System.out.println(countsetbit(10));
+    //System.out.println(countsetbit(10));
     }
 }

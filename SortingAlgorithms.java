@@ -67,13 +67,40 @@ public class SortingAlgorithms {
             }
         }
     }
+    //Question 2 : Swap two numbers without using any third variable.
+    public static void Swap(int a, int b){
+        System.out.println("before swap "+a+" and "+b);
+        //swap
+        a = a^b;
+        b = a^b;
+        a = a^b;
+        //without bit maipulation 
+        // a = a+b;
+        // b = a-b;
+        // a = a-b;
+        System.out.println("after swap "+a+" and "+b);
+    }
+    //Question 3 : Add 1 to an integer using Bit Manipulation.
+    //(Hint : try using Bitwise NOT Operator)
+    public static void addone(int a){
+        System.out.println("add 1 int a  "+~a);
+    }
+    //Question 4 : This question is based on a trick, please directly look at the solution.
+    //Convert uppercase characters to lowercase using bits.
+
+
     public static void main(String[] args) {
         int arr[] = {9,8,5,7,4,3,1,2,6};
         //bubbleSort(arr);
         //SelectionSort(arr);
         //InsertionSort(arr);
         //Arrays.sort(arr);
-        CountingSort(arr);
-        PrintArr(arr);
+        //CountingSort(arr);
+        //PrintArr(arr);
+        //Swap(5,7);
+        //addone(5);
+        for (int ch = 'A'; ch <= 'z'; ch++) {
+        System.out.print((char)(ch | ' '));
     }
+}
 }
