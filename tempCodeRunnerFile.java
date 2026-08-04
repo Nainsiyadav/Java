@@ -1,1 +1,3 @@
-mat
+c.color();
+    //   c.walk();
+    //   c.eat(); 
