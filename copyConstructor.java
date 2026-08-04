@@ -23,6 +23,7 @@ public class copyConstructor {
     //  this.rollno=s1.rollno;
     //  this.marks=s1.marks;
     // }
+    // deep copy constructor
     copyConstructor(copyConstructor s1){
     marks = new int[3];
      this.name=s1.name;
