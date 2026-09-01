@@ -1,5 +1,5 @@
 public class PairsArray {
-   /*  public static void ArrayPairs(int n[]){
+    public static void ArrayPairs(int n[]){
         int tp = 0;
        for (int i = 0; i < n.length; i++) {
            int current = n[i]; // 2,4,6,8,10
