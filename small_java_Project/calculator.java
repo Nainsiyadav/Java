@@ -2,7 +2,6 @@ package small_java_Project;
 
 
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -13,7 +12,7 @@ public class Calculator extends JFrame {
     double num1, num2, result;
     String operator = "";
 
-    CalculatorGUI() {
+    Calculator() {
 
         setTitle("My Java Calculator");
         setSize(350, 450);
@@ -100,6 +99,6 @@ public class Calculator extends JFrame {
     }
 
     public static void main(String[] args) {
-        new CalculatorGUI();
+        new Calculator();
     }
 }
