@@ -29,20 +29,23 @@ public class patterns {
  //---------------------------------------------------------------------------------------------------   
     // pattern --3 - hollow rectangle 
     // public static void main(String args[]){
-    //     Scanner sc=new Scanner(System.in);
-    //     System.out.println("Please enter the number of rows : ");
-    //     int totrows = sc.nextInt();
-    //     System.out.println("Please enter the number of column : ");
-    //     int totcol = sc.nextInt();
-
-    //     for (int i = 1; i <= totrows; i++) {
-    //         for (int j = 1; j <= totcol; j++) {
-    //             if(i==1 || i==totrows || j==1 || j==totcol){
-    //                 System.out.print("*"+ " ");
-    //             }else{
-    //                 System.out.print(" ");
+    //     int n = 10;
+    //     for (int row = 1; row <=n; row++) {
+    //         for (int col = 1; col <= 8; col++) {
+    //             if(row==1 || row==n){
+    //                 System.out.print("* ");
+    //             }
+    //             else{
+    //                 if(col==1 || col==8){
+    //                     System.out.print("* ");
+    //                 }
+    //                 else{
+    //                     System.out.print("  ");
+    //                 }
     //             }
     //         }
+    //         System.out.println();
+        
             
     //     }
     // }
@@ -247,18 +250,63 @@ public class patterns {
 // }
 
 
-// pattern - 12 
-public static void main(String[] args) {
-    int n=5;
-    for (int i = 0; i < n; i++) {
-         for (int j = 0; j <= n-i; j++) {
-          System.out.print(" ");  
-        }
-        for (int j = (2*i-1); j>=1 ; j--) {
-            System.out.print("* ");
-        }
+// pattern - 12 - piramide
+// public static void main(String[] args) {
+//     int n=5;
+//     for (int i = 0; i < n; i++) {
+//          for (int j = 0; j <= n-i; j++) {
+//           System.out.print(" ");  
+//         }
+//         for (int j = (2*i-1); j>=1 ; j--) {
+//             System.out.print("* ");
+//         }
        
-        System.out.println();
-    }
-}
+//         System.out.println();
+//     }
+// }
+
+
+//----------------------------------------------------------------------------
+// pattern - 13 - inverted piramide 
+
+// public static void main(String[] args) {
+//     int n = 4;
+//     for (int i = 1; i <= n; i++) {
+//         for (int j = 1; j <= i-1; j++) {
+//            System.out.print(" "); 
+//         }
+//         for (int j = 1; j <= (2*n-2*i+1); j++) {
+//             System.out.print("* ");
+//         }
+//         System.out.println();
+        
+//     }
+// }
+
+
+//-------------------------------------------------------------------------------------
+// pattern - 14 - hollow right trangle 
+
+// public static void main(String[] args) {
+//     int n = 10;
+//     for (int row = 1;row<=n ; row++) {
+//         if(row==1 || row==2 || row==n){
+//             for (int col = 1; col <= row; col++) {
+//             System.out.print("* ");
+//             }
+//         }else{
+//             System.out.print("* ");
+//             for(int col=1;col<=(row-2);col++){
+//                 System.out.print("  ");
+//             }
+//             System.out.print("* ");
+
+//         }
+//         System.out.println();
+//     }
+// }
+
+
+//-------------------------------------------------------------------------------------------------
+//
  }
