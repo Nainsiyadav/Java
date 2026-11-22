@@ -97,36 +97,132 @@ public static void FindNumber(int mat[][],int key){
     }
     System.out.println("found key "+count+" times ");
 }*/
-public static void main(String[] args) {
-    //int[][] mat = {{4,7,8},{8,8,7}};
-    //FindNumber(mat,7);
-    int mat[][] = {{1,4,9},{11,4,3},{2,2,3}};
-   // printSum(mat);
-   Printsum(mat);
-}
+// public static void main(String[] args) {
+//     //int[][] mat = {{4,7,8},{8,8,7}};
+//     //FindNumber(mat,7);
+//     int mat[][] = {{1,4,9},{11,4,3},{2,2,3}};
+//    // printSum(mat);
+//    Printsum(mat);
+// }
 
-public static void printSum(int mat[][]){
-    int sum = 0;
-    int startrow = 1;
-    int endrow = mat.length;
-    int startcol = 0;
-    int endcol = mat[0].length;
-    for (int i = startrow; i < endrow; i++) {
-        for (int j = startcol; j < endcol; j++) {
-            if(i==1)
-              sum+= mat[i][j];
+// public static void printSum(int mat[][]){
+//     int sum = 0;
+//     int startrow = 1;
+//     int endrow = mat.length;
+//     int startcol = 0;
+//     int endcol = mat[0].length;
+//     for (int i = startrow; i < endrow; i++) {
+//         for (int j = startcol; j < endcol; j++) {
+//             if(i==1)
+//               sum+= mat[i][j];
+//         }
+//     }
+//     System.out.println("sum is :"+sum);
+// }
+
+// //================== optamise way ==============
+// public static void Printsum(int mat[][]){
+//     int sum = 0;
+//     for (int i = 0; i < mat[1].length; i++) {
+//         sum+= mat[1][i]; 
+//     }
+//     System.out.println("sum is :"+sum);
+
+// }
+
+
+// ----------------------------Transpose of Matrix-----------------------
+
+// public static void tranport(int mat[][]){
+//    for (int i = 0; i < mat.length; i++) {
+//       for (int j = 0; j < mat.length; j++) {
+//         System.out.print(mat[j][i]+" ");
+//       }
+//       System.out.println();
+//    }
+// }
+// public static void main(String args[]){
+//     int mat[][] = {{1,2,3},{4,5,6},{7,8,9}};
+//     tranport(mat);
+// }
+
+//---------------------------------------- Print Diagonal Elements---------------------
+
+// public static void DiagonalElement(int mat[][]){
+// for (int i = 0; i < mat.length; i++) {
+//     for (int j = 0; j < mat.length; j++) {
+//         if(mat[i]==mat[j]){
+//             System.out.print(mat[i][j]+" ");
+//         }
+        
+//     }
+// }
+// }
+// public static void main(String args[]){
+//     int mat[][] = {{1,2,3},{4,5,6},{7,8,9}};
+//     DiagonalElement(mat);
+// }
+
+
+//-------------------------------- Sum of Diagonal-------------------------
+
+// public static void DiagonalSum(int mat[][]){
+//      int sum =0;
+// for (int i = 0; i < mat.length; i++) {
+//     for (int j = 0; j < mat.length; j++) {
+//         if(mat[i]==mat[j]){
+//             sum+= mat[i][j];
+//         }
+//     }
+// }
+// System.out.println(" Sum of Diagonal is "+ sum);
+
+// }
+// public static void main(String args[]){
+//     int mat[][] = {{1,2,3},{4,5,6},{7,8,9}};
+//     DiagonalSum(mat);
+// }
+
+
+//-------------------------------------------Search Element in Matrix----------------------------------
+
+// public static void findMatrixElement(int mat[][],int key){
+// for (int i = 0; i < mat.length; i++) {
+//     for (int j = 0; j < mat[0].length; j++) {
+//        if(mat[i][j] == key){
+//         System.out.print("key found at index "+"("+i+","+j+")");
+//        }
+       
+//     }
+// }
+// }
+// public static void main(String[] args){
+//     int mat[][] = {{1,2,3},{4,5,6},{7,8,9}};
+//     int key = 5;
+//     findMatrixElement(mat,key);
+// }
+
+
+//--------------------------------------------------Check Matrix is Symmetric---------------------------
+
+public static void SymmetricMat(int mat[][]){
+for (int i = 0; i < mat.length; i++) {
+    for (int j = 0; j < mat.length; j++) {
+        if(mat[i][j] != mat[j][i]){
+          System.out.println("Not Symmetric");
+          return;  
         }
     }
-    System.out.println("sum is :"+sum);
 }
+System.out.println("Matrix is a Symmetric Matrix ");
 
-//================== optamise way ==============
-public static void Printsum(int mat[][]){
-    int sum = 0;
-    for (int i = 0; i < mat[1].length; i++) {
-        sum+= mat[1][i]; 
-    }
-    System.out.println("sum is :"+sum);
-
+}
+public static void main(String args[]){
+int mat[][] = {
+    {1,2,3},
+    {2,4,5},
+    {3,5,6}
+};
+SymmetricMat(mat);
 }
 }
